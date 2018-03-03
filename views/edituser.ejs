@@ -1,0 +1,33 @@
+<% include partials/header.ejs %>
+
+<div class="ui container">
+
+	<div class="ui segment">
+		
+		<div class="ui large header">Edit User : <%=user.name%></div>
+
+			<form class="ui form" action="/users/<%=user._id%>?_method=PUT" method="POST">
+				<div class="field">
+					<label>First Name</label>
+					<input type="text" name="user[name]" value="<%=user.name%>">
+				</div>
+				<div class="field">
+					<label>Last Name</label>
+					<input type="text" name="user[surname]" value="<%=user.surname%>">
+				</div>
+				<div class="field">
+					<label>Age</label>
+					<input type="text" name="user[age]" value="<%=user.age%>">
+				</div>
+				<button class="ui yellow button" type="submit">Update</button>
+			</form>
+
+			<a href="/users" class="ui right floated button">Back</a>
+
+		</div>
+	
+	</div>
+	
+</div>
+
+<% include partials/footer.ejs %>

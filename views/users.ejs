@@ -1,0 +1,53 @@
+<% include partials/header.ejs %>
+
+<div class="ui container">
+	
+	<div class="ui segment">
+
+		<div class="ui center aligned icon header">
+			<i class="circular users icon"></i>
+			Users
+		</div>
+		
+		<table class="ui celled table">
+			<thead>
+				<th>NAME</th>
+				<th>SURNAME</th>
+				<th>AGE</th>
+				<th>ACTION</th>
+			</thead>
+			<tbody>
+				<% users.forEach(function (user) {%>
+					<tr>
+						<td><%=user.name%></td>
+						<td><%=user.surname%></td>
+						<td><%=user.age%></td>
+						<td>
+							<a href="/users/<%=user._id%>/edit" class="ui inverted yellow button">
+								<i class="edit icon"></i>
+								Edit
+							</a>
+							<form action="/users/<%=user._id%>?_method=DELETE" method="POST" style="display: inline;">
+								<button class="ui inverted red button">
+									<i class="trash alternate outline icon"></i>
+									Remove
+								</button>
+							</form>
+						</td>
+					</tr>
+				<% }); %>
+			</tbody>
+		</table>
+
+		<a href="/users/new" class="ui green button">
+			<i class="plus icon"></i>
+			Add New User
+		</a>
+
+		<a href="/" class="ui right floated button">Back</a>
+
+	</div>
+	
+</div>
+
+<% include partials/footer.ejs %>

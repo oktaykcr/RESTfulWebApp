@@ -1,0 +1,21 @@
+{
+  "name": "restful-web-app",
+  "version": "1.0.0",
+  "description": "this project is basic web app which is used RESTful web services and mongodb",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name":"Oktay Kocer",
+    "email":"oktaykocer@outlook.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "method-override": "^2.3.10",
+    "mongoose": "^5.0.7"
+  }
+}

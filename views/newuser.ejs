@@ -1,0 +1,28 @@
+<% include partials/header.ejs %>
+
+<div class="ui container">
+
+	<div class="ui segment">
+		<div class="ui large header">New User Page</div>
+
+		<form class="ui form" action="/users" method="POST">
+			<div class="field">
+				<label>First Name</label>
+				<input type="text" name="user_name" placeholder="First Name">
+			</div>
+			<div class="field">
+				<label>Last Name</label>
+				<input type="text" name="user_surname" placeholder="Last Name">
+			</div>
+			<div class="field">
+				<label>Age</label>
+				<input type="text" name="user_age" placeholder="Age">
+			</div>
+			<button class="ui button" type="submit">Submit</button>
+		</form>
+		<a href="/users" class="ui right floated button">Back</a>
+	</div>
+	
+</div>
+
+<% include partials/footer.ejs %>

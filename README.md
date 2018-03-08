@@ -47,13 +47,13 @@ is the style part of my project.
 ### Installation ###
 You need to install **NodeJs** and **MongoDB** to use this application.<br>
 **MongoDB** <br>
-	1. Download [Windows Server 2008](https://www.mongodb.com/download-center?jmp=nav#community) 
-	2. Install MongoDB to any file location in your computer.
-	3. Create new folder to any location in your computer to store your MongoDB data.
-	4. Open new control panel change your directory according to where you install your MongoDB Server
-	 and go to bin folder. Example : `cd D:\ProgramFiles\MongoDB\Server\3.6\bin`
-	5. Enter these commands into the control panel to start MongoDB server:`mongod --dbpath D:\yourMongoDBdataFolder`
-	6. You can check your data with type this command in current location (MongoDB\Server\3.6\bin) :`mongo` <br>
+	1. Download [Windows Server 2008](https://www.mongodb.com/download-center?jmp=nav#community) <br>
+	2. Install MongoDB to any file location in your computer. <br>
+	3. Create new folder to any location in your computer to store your MongoDB data. <br>
+	4. Open new control panel change your directory according to where you install your MongoDB Server <br>
+	 and go to bin folder. Example : `cd D:\ProgramFiles\MongoDB\Server\3.6\bin` <br>
+	5. Enter these commands into the control panel to start MongoDB server:`mongod --dbpath D:\yourMongoDBdataFolder` <br>
+	6. You can check your data with type this command in current location (MongoDB\Server\3.6\bin) :`mongo` <br> 
 **NodeJS**
 
 * Run `npm install` from the project's root to install it and its dependencies.

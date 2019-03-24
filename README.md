@@ -8,7 +8,7 @@ This project about <b>RESTful</b> web services and get data from server side. I 
 * [NodeJs](https://nodejs.org/en/)
 * [ExpressJs](https://expressjs.com/)
 * [MongoDB](https://www.mongodb.com/)
-* [Embedded Javascript](http://www.embeddedjs.com/)
+* [Embedded Javascript](https://ejs.co/)
 * [Semantic-UI](https://semantic-ui.com/)
 * **Dependencies**
     * body-parser: *1.18.2*
